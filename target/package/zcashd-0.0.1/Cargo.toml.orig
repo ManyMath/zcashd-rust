@@ -1,0 +1,19 @@
+[package]
+name = "zcashd"
+version = "0.0.1"
+edition = "2021"
+
+description = "zcashd.  A command-line interface and SDK oriented for use by Dart."
+repository = "https://github.com/ManyMath/zcashd-rust"
+license = "MIT"
+
+[[bin]]
+name = "zcashd"
+path = "src/main.rs"
+
+[lib]
+name = "zcashd"
+path = "src/lib.rs"
+crate-type = ["cdylib", "staticlib"]
+
+[dependencies]
